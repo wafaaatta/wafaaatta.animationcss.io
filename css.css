@@ -1,0 +1,74 @@
+body { background-color: gray;
+
+}
+.container{ 
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.circle{ width: 40px;
+    height: 40px;
+    border: solid black;
+    background-color: red;
+    border-radius: 20px;
+    position: absolute;
+
+}
+.anim-1{ margin-left:  75px;
+animation: animation-1 5s infinite alternate;
+
+
+
+}
+@keyframes animation-1 {
+    0% {
+        margin-top: 0;
+    }
+    
+    100%{margin-top: 157px;
+        background-color:blueviolet;
+    }
+
+}
+.anim-2{ 
+    animation: animation-2 2s infinite alternate;
+        }
+    @keyframes animation-2 {
+        from{
+            position: 0;
+            top: 0;
+            left: 0;
+        }
+        
+        to{top:157px;
+            left: 157px; background-color: aquamarine;
+
+        }
+    
+    }
+    .anim-3{ 
+        animation: animation-3 2s infinite alternate;
+    
+        
+        }
+        @keyframes animation-3 {
+    0% {
+    top: 0;
+    left: 0;
+}
+    25% {
+    top: 0;
+    left: 157px;
+}
+    75% {
+    top: 157px;
+    left: 0;
+    background-color: azure;
+}
+    100% {
+    top: 157px;
+    left: 157px;
+    
+}
+        
+        }
